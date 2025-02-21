@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MiApp</string>
+    <string name="hello_world">¡Hola Mundo!</string>
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+
+</resources>

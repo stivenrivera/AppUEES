@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="UEES"
+        android:background="#800000"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity android:name=".PublicacionesActivity"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+       <activity android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".RegisterActivity" 
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".EventoActivity"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".RevistaActivity"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".ProductosActivity"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".ColegioFormActivity"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".FacultadesActivity"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".TipoRegistroActivity"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+
+
+    </application>
+</manifest>
+

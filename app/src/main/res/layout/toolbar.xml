@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:elevation="4dp"
+    android:padding="8dp">
+
+    <!-- Icono izquierda (ejemplo: una casa) -->
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/home"
+        android:contentDescription="Inicio"
+        android:layout_gravity="center"
+        android:padding="4dp"/>
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/mi_red"
+        android:contentDescription="mi red"
+        android:layout_gravity="center"
+        android:padding="4dp"/>
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_agendar"
+        android:contentDescription="agenda"
+        android:layout_gravity="center"
+        android:padding="4dp"/>
+
+    <!-- Icono de búsqueda -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:src="@drawable/search"
+        android:contentDescription="Buscar"
+        android:layout_gravity="center"
+        android:padding="4dp"/>
+    
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/perfil"
+        android:contentDescription="perfil"
+        android:layout_gravity="end"
+        android:padding="4dp"/>
+
+
+</androidx.appcompat.widget.Toolbar>

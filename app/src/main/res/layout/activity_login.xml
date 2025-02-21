@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagen de Fondo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_login" />
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- Capa conchevino transparente en el lado izquierdo (3/4 de la pantalla) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="#66800020"
+        android:gravity="center"
+        android:padding="32dp"
+        android:orientation="vertical">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_uees"
+            android:layout_marginBottom="20dp" />
+
+
+        <!-- Campo de Usuario -->
+        <EditText
+            android:id="@+id/editTextUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@drawable/custom_input"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Campo de Contraseña -->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@drawable/custom_input"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Mensaje de error -->
+        <TextView
+            android:id="@+id/textError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incorrecto, intenta nuevamente"
+            android:textSize="14sp"
+            android:textColor="#FF0000"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Botón Ingresar -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresar"
+            android:backgroundTint="#800000"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"/>
+
+                <!-- Sección de "¿Olvidaste tu contraseña?" y "Regístrate" -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- ¿Olvidaste tu contraseña? -->
+            <TextView
+                android:id="@+id/textForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Olvidaste tu contraseña?"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+
+            <!-- Regístrate -->
+            <TextView
+                android:id="@+id/textRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regístrate"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Parte derecha vacía (1/4 de la pantalla) -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" />
+
+</LinearLayout>
+
+
+</FrameLayout>
+
+

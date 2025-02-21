@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <include layout="@layout/toolbar_register"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione su colegio"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Provincia -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Provincia" />
+
+    <Spinner
+        android:id="@+id/spinnerProvincia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Ciudad -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciudad" />
+
+    <Spinner
+        android:id="@+id/spinnerCiudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Colegio -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Colegio" />
+
+    <EditText
+        android:id="@+id/editTextColegio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el nombre de su colegio" />
+
+    <!-- Opciones de abanderado/escolta -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Es abanderado o escolta?"
+        android:textStyle="bold"  />
+
+    <RadioGroup
+        android:id="@+id/radioGroupAbanderado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioAbanderado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Certificado de Abanderado" />
+
+        <RadioButton
+            android:id="@+id/radioEscolta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Certificado de Escolta" />
+
+        <RadioButton
+            android:id="@+id/radioNoTengo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No tengo" />
+    </RadioGroup>
+
+    <!-- Bachillerato Internacional -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Tienes Bachillerato Internacional?" 
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupBI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioCertificadoBI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Certificado de BI" />
+
+        <RadioButton
+            android:id="@+id/radioDiplomaBI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diploma de BI" />
+
+        <RadioButton
+            android:id="@+id/radioNoTengoBI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No tengo" />
+    </RadioGroup>
+
+    <!-- Botón para continuar -->
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuar" 
+        android:background="@color/dark_red"/>
+
+</LinearLayout>
+
+

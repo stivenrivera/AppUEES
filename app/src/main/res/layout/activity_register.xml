@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="58dp"
+          android:orientation="horizontal"
+          android:padding="8dp"
+          android:background="@color/dark_red"
+          android:gravity="center_vertical">
+
+          <ImageView
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:src="@drawable/ic_logo"
+               android:contentDescription="Carrito de compras"
+               android:layout_marginEnd="10dp" />
+
+          <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Ingrese su informacion"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               android:textColor="@android:color/white"/>
+          </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextNombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombres"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/editTextApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellidos"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/editTextCedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cédula de Identidad"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/editTextCiudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ciudad de Residencia"
+            android:inputType="text"/>
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione el Area de su titulo de tercer nivel de grado"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"/>
+
+        <Spinner
+            android:id="@+id/spinnerTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo Electrónico"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/editTextCelular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de Celular"
+            android:inputType="phone"/>
+
+        <Button
+            android:id="@+id/buttonEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:background="@color/dark_red"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</ScrollView>

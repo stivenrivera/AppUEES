@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <include layout="@layout/toolbar_facultades"/>
+
+    <!-- Contenedor de información del colegio y carrera -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:paddingBottom="10dp">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#B71C1C"
+        android:padding="10dp"
+        android:layout_marginEnd="5dp"> <!-- Espacio entre los dos cuadros -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colegio"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtColegio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#880E4F"
+        android:padding="10dp"
+        android:layout_marginStart="5dp"> <!-- Espacio entre los dos cuadros -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carrera"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtCarrera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carrera: --"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
+
+<!-- Contenedor de valores de la carrera y del PRE -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#1B5E20"
+        android:padding="10dp"
+        android:layout_marginEnd="5dp"> <!-- Espacio entre los dos cuadros -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="valor de la carrera"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+        
+
+        <TextView
+            android:id="@+id/txtValorCarrera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor Carrera: --"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#0D47A1"
+        android:padding="10dp"
+        android:layout_marginStart="5dp"> <!-- Espacio entre los dos cuadros -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor del pre"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtValorPRE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor PRE: --"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
+
+    <!-- Sección de Facultades -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp">
+
+        <Button
+            android:id="@+id/btnArquitectura"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Arquitectura y Diseño"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnComunicacion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Ciencias de la Comunicación"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnDerecho"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Derecho, Política y Desarrollo"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnNegocios"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Negocios y Economía"
+            android:textAllCaps="false"/>
+    </GridLayout>
+
+</LinearLayout>
