@@ -18,6 +18,7 @@ import android.widget.Toast;
 import androidx.appcompat.widget.Toolbar;
 import android.content.SharedPreferences;
 import com.example.miapp.models.MenuItemModel;
+import android.graphics.Color;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         // Configurar Toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        toolbar.setTitleTextColor(Color.WHITE);
         // Configurar DrawerLayout con menú de hamburguesa
         drawerLayout = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,

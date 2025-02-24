@@ -18,7 +18,7 @@
         android:textSize="18sp"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        android:background="#80000000" 
+        android:background="@drawable/rounded_textview" 
         android:padding="8dp"  
         android:layout_gravity="bottom|center_horizontal"/> <!-- Lo mueve a la parte inferior -->
 </FrameLayout>

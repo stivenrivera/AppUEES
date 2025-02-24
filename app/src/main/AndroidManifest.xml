@@ -3,7 +3,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="UEES"
+        android:label="NRBYUEES"
         android:background="#800000"
         android:theme="@style/Theme.AppCompat.Light">
         <activity android:name=".PublicacionesActivity"
@@ -32,6 +32,8 @@
         <activity android:name=".FacultadesActivity"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".TipoRegistroActivity"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".InformacionGeneralActivity"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
 

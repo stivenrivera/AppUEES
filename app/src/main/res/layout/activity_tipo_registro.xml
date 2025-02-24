@@ -26,9 +26,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Admisiones"
-        android:background="@color/dark_red"
+        android:background="@drawable/rounded_button"
         android:layout_marginBottom="10dp"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/btnEducacionContinua"
@@ -36,14 +37,16 @@
         android:layout_height="wrap_content"
         android:text="UEES Educación Continua"
         android:layout_marginBottom="10dp"
-        android:background="@color/dark_red"
-        android:textColor="@android:color/white"/>
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/btnUEESOnline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/dark_red"
+        android:background="@drawable/rounded_button"
         android:text="UEES Online"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"/>
 </LinearLayout>

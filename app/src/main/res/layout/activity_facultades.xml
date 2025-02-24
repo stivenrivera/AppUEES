@@ -7,23 +7,21 @@
 
     <include layout="@layout/toolbar_facultades"/>
 
-    <!-- Contenedor de información del colegio y carrera -->
+<!-- Contenedor de información del colegio y carrera -->
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:weightSum="2"
+    android:orientation="vertical"
     android:paddingBottom="10dp">
 
-
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:orientation="vertical"
-        android:background="#B71C1C"
+        android:background="@drawable/rounded_textview"
         android:padding="10dp"
-        android:layout_marginEnd="5dp"> <!-- Espacio entre los dos cuadros -->
+        android:layout_marginBottom="5dp"
+        android:minHeight="100dp"> <!-- Espacio entre recuadros -->
 
         <TextView
             android:layout_width="wrap_content"
@@ -39,17 +37,16 @@
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"
             android:textStyle="bold"/>
-
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:orientation="vertical"
-        android:background="#880E4F"
+        android:background="@drawable/rounded_textview"
         android:padding="10dp"
-        android:layout_marginStart="5dp"> <!-- Espacio entre los dos cuadros -->
+        android:layout_marginBottom="5dp"
+        android:minHeight="100dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -67,33 +64,23 @@
             android:textColor="@android:color/white"
             android:textStyle="bold"/>
     </LinearLayout>
-</LinearLayout>
-
-<!-- Contenedor de valores de la carrera y del PRE -->
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:weightSum="2"
-    android:paddingBottom="10dp">
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:orientation="vertical"
-        android:background="#1B5E20"
+        android:background="@drawable/rounded_textview"
         android:padding="10dp"
-        android:layout_marginEnd="5dp"> <!-- Espacio entre los dos cuadros -->
+        android:layout_marginBottom="5dp"
+        android:minHeight="100dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="valor de la carrera"
+            android:text="Valor de la carrera"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@android:color/white"/>
-        
 
         <TextView
             android:id="@+id/txtValorCarrera"
@@ -105,18 +92,17 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:orientation="vertical"
-        android:background="#0D47A1"
+        android:background="@drawable/rounded_textview"
         android:padding="10dp"
-        android:layout_marginStart="5dp"> <!-- Espacio entre los dos cuadros -->
+        android:minHeight="100dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Valor del pre"
+            android:text="Valor del PRE"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@android:color/white"/>
@@ -129,49 +115,31 @@
             android:textColor="@android:color/white"
             android:textStyle="bold"/>
     </LinearLayout>
+
 </LinearLayout>
 
+
     <!-- Sección de Facultades -->
-    <GridLayout
+     <ExpandableListView
+        android:id="@+id/expandableListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="2"
-        android:rowCount="2"
-        android:padding="10dp"
-        android:background="#FFFFFF"
-        android:elevation="4dp">
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:background="@android:color/white"/>
 
-        <Button
-            android:id="@+id/btnArquitectura"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="Arquitectura y Diseño"
-            android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btnComunicacion"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="Ciencias de la Comunicación"
-            android:textAllCaps="false"/>
-
-        <Button
-            android:id="@+id/btnDerecho"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="Derecho, Política y Desarrollo"
-            android:textAllCaps="false"/>
-
-        <Button
-            android:id="@+id/btnNegocios"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="Negocios y Economía"
-            android:textAllCaps="false"/>
-    </GridLayout>
 
 </LinearLayout>
