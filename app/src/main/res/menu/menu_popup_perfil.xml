@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/opcion_seguir"
+        android:title="Seguir"
+        android:icon="@drawable/seguir"/>
+
+    <item
+        android:id="@+id/opcion_filtrar"
+        android:title="Filtrar"/>
+</menu>

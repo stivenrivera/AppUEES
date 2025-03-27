@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/black"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        
+    <!-- Menú de almuerzos -->
+    <TextView
+        android:id="@+id/menuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menú de Almuerzos"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <GridView
+        android:id="@+id/menuGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:columnWidth="0dp"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:paddingBottom="16dp"
+        android:gravity="center"/>
+
+    <!-- Productos Adicionales -->
+    <TextView
+        android:id="@+id/productosTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Productos Adicionales"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <GridView
+        android:id="@+id/productosGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:columnWidth="0dp"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:gravity="center"/>
+</LinearLayout>
+

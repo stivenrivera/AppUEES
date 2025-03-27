@@ -79,6 +79,27 @@
         </LinearLayout>
 
         <!-- Botón Comentar -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iconoDescarga"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/descarga"
+                android:layout_marginEnd="4dp"/>
+
+            <TextView
+                android:id="@+id/txtDescarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descargar"
+                android:textSize="14sp"/>
+        </LinearLayout>
         
 
     </LinearLayout>

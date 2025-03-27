@@ -8,6 +8,7 @@ import com.example.miapp.EventoAdapter;
 import com.example.miapp.Evento;
 import java.util.ArrayList;
 import java.util.List;
+import android.widget.ImageView;
 
 public class EventoActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
@@ -18,6 +19,9 @@ public class EventoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.eventos);
+
+        ImageView btnRegresar = findViewById(R.id.btn_regresar);
+        btnRegresar.setOnClickListener(v -> finish());
 
         recyclerView = findViewById(R.id.recyclerViewEventos);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -32,13 +36,13 @@ public class EventoActivity extends AppCompatActivity {
     private void cargarEventos() {
         listaEventos.add(new Evento("Facultad de Ciencias de la Salud",
                 "Este sabado tendremos la gran conferencia en la Biblioteca con un invitado sorpresa, no te la pierdas",
-                R.drawable.ic_profile, R.drawable.conferencia));
+                R.drawable.perfilfacultad, R.drawable.conferencia));
 
         listaEventos.add(new Evento("Facultad de Comunicacion", "Espero puedas asistir",
-                R.drawable.ic_profile, R.drawable.evento));
+                R.drawable.perfilfacultad, R.drawable.evento));
 
         listaEventos.add(new Evento("Facultad de Ciencias de la Salud",
                 "Gran salida de campo apta para cualquier miembro de UEES",
-                R.drawable.ic_profile, R.drawable.salida_campo));
+                R.drawable.perfilfacultad, R.drawable.salida_campo));
     }
 }

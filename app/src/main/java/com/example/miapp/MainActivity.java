@@ -91,7 +91,8 @@ public class MainActivity extends AppCompatActivity {
         // Configurar RecyclerView
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
-        recyclerView.setNestedScrollingEnabled(false);
+        recyclerView.setNestedScrollingEnabled(true);
+        recyclerView.setHasFixedSize(false);
 
         // Opciones del menú
         menuItems = new ArrayList<>(); // Usar la variable de instancia
@@ -101,6 +102,9 @@ public class MainActivity extends AppCompatActivity {
         menuItems.add(new MenuItemModel("Revista", R.drawable.merchandising_image));
         menuItems.add(new MenuItemModel("Almacen", R.drawable.travel_image));
         menuItems.add(new MenuItemModel("UEES clinic", R.drawable.magazine_image));
+        menuItems.add(new MenuItemModel("BUEES", R.drawable.buees));
+        menuItems.add(new MenuItemModel("Caramel Coffee", R.drawable.coffee));
+        menuItems.add(new MenuItemModel("GYM UEES", R.drawable.gym));
 
         adapter = new MenuAdapter(this, menuItems, new MenuAdapter.OnItemClickListener() {
             @Override
@@ -123,6 +127,14 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(MainActivity.this, RevistaActivity.class));
                 } else if (position == 4) { // Opción Almacén
                     startActivity(new Intent(MainActivity.this, ProductosActivity.class));
+                } else if (position == 5) { // Opción UEES CLINIC
+                    startActivity(new Intent(MainActivity.this, UeesClinic.class));
+                } else if (position == 6) { // Opción BUEES
+                    startActivity(new Intent(MainActivity.this, HorariosActivity.class));
+                } else if (position == 7) { // Opción COFFE
+                    startActivity(new Intent(MainActivity.this, Caramel.class));
+                } else if (position == 8) { // Opción GYM
+                    startActivity(new Intent(MainActivity.this, GymUees.class));
                 }
             }
         });

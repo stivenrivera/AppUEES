@@ -48,14 +48,14 @@
         android:scaleType="centerCrop"
         android:layout_marginTop="8dp"/>
 
-    <!-- Opciones: Comentar y Agendar -->
+    <!-- Opciones: Interaccion, Insta y Face -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
         android:paddingTop="8dp">
-    
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,21 +64,21 @@
             android:padding="8dp">
 
             <ImageView
-                android:id="@+id/iconoAsistir"
+                android:id="@+id/iconoInteraccion"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/asistire"
+                android:src="@drawable/interacion"
                 android:layout_marginEnd="4dp"/>
 
             <TextView
-                android:id="@+id/txtAsistir"
+                android:id="@+id/txtInteraccion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Asistire"
+                android:text="Me gusta"
                 android:textSize="14sp"/>
         </LinearLayout>
 
-        <!-- Botón Agendar -->
+        
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -87,19 +87,43 @@
             android:padding="8dp">
 
             <ImageView
-                android:id="@+id/iconoAgendar"
+                android:id="@+id/iconoInsta"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_agendar"
+                android:src="@drawable/insta"
                 android:layout_marginEnd="4dp"/>
 
             <TextView
-                android:id="@+id/txtAgendar"
+                android:id="@+id/txtInsta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Agendar"
+                android:text="Instagram"
                 android:textSize="14sp"/>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iconoFace"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/face"
+                android:layout_marginEnd="4dp"/>
+
+            <TextView
+                android:id="@+id/txtFace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook"
+                android:textSize="14sp"/>
+        </LinearLayout>
+        
+
     </LinearLayout>
 
 </LinearLayout>

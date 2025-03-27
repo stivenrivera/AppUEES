@@ -10,21 +10,23 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.List;
+import android.widget.ImageView;
 
 public class ProductosActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private ProductoAdapter adapter;
     private List<Producto> listaProductos;
-    private FloatingActionButton btnCarrito;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_productos);
 
+        ImageView btnRegresar = findViewById(R.id.btn_regresar);
+        btnRegresar.setOnClickListener(v -> finish());
+
         recyclerView = findViewById(R.id.recyclerViewProductos);
-        btnCarrito = findViewById(R.id.btnCarrito);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -37,7 +39,5 @@ public class ProductosActivity extends AppCompatActivity {
         adapter = new ProductoAdapter(this, listaProductos);
         recyclerView.setAdapter(adapter);
 
-        btnCarrito.setOnClickListener(
-                v -> Toast.makeText(ProductosActivity.this, "Ver carrito", Toast.LENGTH_SHORT).show());
     }
 }

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/magazine_image">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/clinicTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UEES Clinic"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:paddingBottom="20dp"/>
+
+    <!-- Contenedor con GridLayout para 2 columnas -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:alignmentMode="alignMargins"
+        android:padding="10dp">
+
+        <!-- Botón 1: Agende una cita -->
+        <LinearLayout
+            android:id="@+id/btnAgendarCita"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imgAgendarCita"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/agendarcita"/>
+
+            <TextView
+                android:id="@+id/txtAgendarCita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agende una cita"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <!-- Botón 2: Solicitar Exámenes -->
+        <LinearLayout
+            android:id="@+id/btnSolicitarExamenes"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imgSolicitarExamenes"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/examenmedico"/>
+
+            <TextView
+                android:id="@+id/txtSolicitarExamenes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solicitar Exámenes"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <!-- Botón 3: Resultados de Exámenes -->
+        <LinearLayout
+            android:id="@+id/btnResultadosExamenes"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imgResultadosExamenes"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/resultadomedico"/>
+
+            <TextView
+                android:id="@+id/txtResultadosExamenes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resultados de Exámenes"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <!-- Botón 4: Resultados de Imágenes -->
+        <LinearLayout
+            android:id="@+id/btnResultadosImagenes"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imgResultadosImagenes"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/resultado"/>
+
+            <TextView
+                android:id="@+id/txtResultadosImagenes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resultados de Imágenes"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>

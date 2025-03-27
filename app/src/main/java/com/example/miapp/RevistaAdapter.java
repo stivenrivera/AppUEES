@@ -35,6 +35,7 @@ public class RevistaAdapter extends RecyclerView.Adapter<RevistaAdapter.ViewHold
 
         // Opciones "Comentar" y "Agendar" - Solo como elementos visuales
         holder.txtInteraccion.setText("Me gusta");
+        holder.txtDescarga.setText("Descargar");
 
     }
 
@@ -44,8 +45,8 @@ public class RevistaAdapter extends RecyclerView.Adapter<RevistaAdapter.ViewHold
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView txtNombre, txtEvento, txtInteraccion;
-        ImageView imgPerfil, imgEvento, iconoInteraccion;
+        TextView txtNombre, txtEvento, txtInteraccion, txtDescarga;
+        ImageView imgPerfil, imgEvento, iconoInteraccion, iconoDescarga;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -55,6 +56,8 @@ public class RevistaAdapter extends RecyclerView.Adapter<RevistaAdapter.ViewHold
             imgEvento = itemView.findViewById(R.id.imgEvento);
             txtInteraccion = itemView.findViewById(R.id.txtInteraccion);
             iconoInteraccion = itemView.findViewById(R.id.iconoInteraccion);
+            txtDescarga = itemView.findViewById(R.id.txtDescarga);
+            iconoDescarga = itemView.findViewById(R.id.iconoDescarga);
         }
     }
 }

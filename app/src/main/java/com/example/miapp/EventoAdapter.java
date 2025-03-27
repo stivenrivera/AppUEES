@@ -34,8 +34,9 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.ViewHolder
         holder.imgEvento.setImageResource(evento.getImagenEvento());
 
         // Opciones "Comentar" y "Agendar" - Solo como elementos visuales
-        holder.txtAsistir.setText("Asistire");
-        holder.txtAgendar.setText("Agendar");
+        holder.txtInteraccion.setText("Me gusta");
+        holder.txtInsta.setText("Instagram");
+        holder.txtFace.setText("Facebook");
     }
 
     @Override
@@ -44,8 +45,8 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.ViewHolder
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView txtNombre, txtEvento, txtAsistir, txtAgendar;
-        ImageView imgPerfil, imgEvento, iconoAsistir, iconoAgendar;
+        TextView txtNombre, txtEvento, txtInteraccion, txtInsta, txtFace;
+        ImageView imgPerfil, imgEvento, iconoInteraccion, iconoInsta, iconoFace;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -53,10 +54,13 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.ViewHolder
             txtEvento = itemView.findViewById(R.id.txtEvento);
             imgPerfil = itemView.findViewById(R.id.imgPerfil);
             imgEvento = itemView.findViewById(R.id.imgEvento);
-            txtAsistir = itemView.findViewById(R.id.txtAsistir);
-            txtAgendar = itemView.findViewById(R.id.txtAgendar);
-            iconoAsistir = itemView.findViewById(R.id.iconoAsistir);
-            iconoAgendar = itemView.findViewById(R.id.iconoAgendar);
+            txtInteraccion = itemView.findViewById(R.id.txtInteraccion);
+            iconoInteraccion = itemView.findViewById(R.id.iconoInteraccion);
+            txtInsta = itemView.findViewById(R.id.txtInsta);
+            iconoInsta = itemView.findViewById(R.id.iconoInsta);
+            txtFace = itemView.findViewById(R.id.txtFace);
+            iconoFace = itemView.findViewById(R.id.iconoFace);
+
         }
     }
 }

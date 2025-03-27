@@ -35,8 +35,16 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".InformacionGeneralActivity"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-
-
+        <activity android:name=".HorariosActivity"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".Caramel"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".GymUees"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".UeesClinic"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".ImagenExpandidaActivity"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
     </application>
 </manifest>

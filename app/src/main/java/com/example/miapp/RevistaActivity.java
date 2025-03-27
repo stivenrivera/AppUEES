@@ -8,6 +8,7 @@ import com.example.miapp.RevistaAdapter;
 import com.example.miapp.Evento;
 import java.util.ArrayList;
 import java.util.List;
+import android.widget.ImageView;
 
 public class RevistaActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
@@ -18,6 +19,9 @@ public class RevistaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.revista);
+
+        ImageView btnRegresar = findViewById(R.id.btn_regresar);
+        btnRegresar.setOnClickListener(v -> finish());
 
         recyclerView = findViewById(R.id.recyclerViewEventos);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -31,10 +35,11 @@ public class RevistaActivity extends AppCompatActivity {
 
     private void cargarEventos() {
         listaEventos.add(new Evento("Facultad de Ciencias de la Salud",
-                "Han aceptado el intercambio de estudiantes con esta universidad....",
-                R.drawable.ic_profile, R.drawable.conferencia));
+                "Prof: Ing. Andres Garcia \nHan aceptado el intercambio de estudiantes con esta universidad.... \n ",
+                R.drawable.perfilfacultad, R.drawable.conferencia));
 
-        listaEventos.add(new Evento("Facultad de Derecho", "No te pierdas esta noticia importante",
-                R.drawable.ic_profile, R.drawable.evento));
+        listaEventos
+                .add(new Evento("Facultad de Derecho", "Alumno: Daniel Perez \nNo te pierdas esta noticia importante",
+                        R.drawable.perfilfacultad, R.drawable.evento));
     }
 }
